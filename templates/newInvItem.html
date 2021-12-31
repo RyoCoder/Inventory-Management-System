@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action = "{{ url_for('addrec') }}" method = "POST">
+        <h3>Product Information:</h3>
+        Barcode#<br>
+        <input type = "number" name = "barcode" /></br>
+        Name<br>
+        <input type = "text" name = "name" /></br>
+        
+        Quantity<br>
+        <input type = "number" name="quantity"><br>
+        
+        Price<br>
+        <input type = "number" name = "price" step="0.01"/><br>
+        
+        Sale<br>
+        <input type = "number" name = "sales_price" step="0.01"/><br>
+
+        Authorizer<br>
+        <input type = "text" name = "salesLeader" /><br>
+        <input type = "submit" value = "submit" /><br>
+    </form>
+{% endblock %}

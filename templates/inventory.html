@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %}Inventory Menu{% endblock %}</h1>
+    <ul>
+        <h3>Clerical Options:</h3>
+        <li>
+            <a href="/viewInv">View Inventory</a>
+        </li>
+        <li>
+            <a href="/newInvItem">Add Item to Inventory</a>
+        </li>
+        <h3>Admin Options:</h3>
+        <li>
+            <a href="/admin">User Access</a>
+        </li>
+    </ul>>
+{% endblock %}
